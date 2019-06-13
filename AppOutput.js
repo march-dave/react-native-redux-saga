@@ -3,7 +3,6 @@ import { Component } from 'react'
 import { TouchableOpacity, StyleSheet, View, Text, FlatList } from 'react-native'
 
 import { connect } from 'react-redux';
-import fetchCall from "./fetchCall";
 
 const mapStateToProps = state => {
     return {
