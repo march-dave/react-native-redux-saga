@@ -3,7 +3,6 @@ import { Component } from 'react'
 import { TouchableOpacity, StyleSheet, View, Text, TextInput, FlatList } from 'react-native'
 import ContactActionCreator from './Action';
 import { connect } from 'react-redux';
-import fetchCall from "./fetchCall";
 
 const mapDispatchToProps = dispatch => {
     return {
