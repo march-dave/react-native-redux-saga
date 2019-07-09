@@ -14,6 +14,8 @@ function* fetchUser() {
 }
 
 function* mySaga() {
+  // SET_PAGES 이름이다. 액션에서 비동기 처리 하지 아니 하고 여기서 처리 한다. 
+  // 액센에서 SET_PAGES 이것을 요구 하면  fetchUser() 을 비동기 적으로 실행한다.
   yield takeEvery("SET_PAGES", fetchUser);
 }
 
