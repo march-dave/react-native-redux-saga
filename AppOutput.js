@@ -4,6 +4,10 @@ import { TouchableOpacity, StyleSheet, View, Text, FlatList } from 'react-native
 
 import { connect } from 'react-redux';
 
+
+// 아래 state 는 어디서 연결 되어 있냐면? connect(mapStateToProps, null)(AppOutput); 통해서 리덕스 state 와 연결이 되어 있다.
+// 좀더 자세히 말해 state는 리덕스 state를 통해  ==> Provider 의 store 를 통해 ==> 전역 state 에 연결 되어 있다.
+// 내가 따로 subscribe를 하지 아니 했더라도 connect 를 통해 subscribe 가 되어 있다는 얘기
 const mapStateToProps = state => {
     return {
         getpage: state.pages
