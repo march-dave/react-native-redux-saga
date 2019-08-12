@@ -27,6 +27,8 @@ const myStore = createStore(reducer, applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(mySaga)
 
 
+//  여기서 Provider 바깥에어서는 아직 subscribe 가 연결이 되기 전이다. 고로 state를 사용 할 수 가 없다.
+
 interface Props { }
 export default class App extends Component<Props> {
   render() {
